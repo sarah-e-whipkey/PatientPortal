@@ -1,34 +1,112 @@
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+#main-white-div {
+    margin-top: -20px;
+    margin-bottom: -20px;
+   
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.page-header{
+    border: none;
+
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+
+#loginForm {
+    padding-top: 275px;
+    
 }
 
-/* Carousel */
-.carousel-caption {
-    z-index: 10 !important;
+
+.col-sm-2 control-label{
+ padding-right: 10px;
+ margin-right: 175px;
 }
 
-    .carousel-caption p {
-        font-size: 20px;
-        line-height: 1.4;
-    }
+.company-name {
 
-@media (min-width: 768px) {
-    .carousel-caption {
-        z-index: 10 !important;
-    }
+    font-family: 'Quicksand', sans-serif;
+    color: #ff5050;
+    /*text-shadow: 0 0 3px #84e1e1, 0 0 5px #eafafa;*/
+}
+
+.main-pic {
+
+    margin-left: 160px;
+    padding-left: 25px;
+    margin-bottom: 55px;
+}
+
+#doc-logo {
+
+    padding-left: 175px;
+}
+
+.mainBody {
+
+    background-image: url(../images/spotbkg.jpg);
+
+    /*background: repeating-radial-gradient(#eafafa, #84e1e1);*/
+
+}
+
+#bottomLink {
+
+    background: none;
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: none;
+}
+
+.col-md-12 {
+
+    background-color: white;
+    border-radius: 25px;
+    border-color: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.above-pics {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #eafafa;
+    text-align:center;
+    color: #ff5050;
+    margin-left: -13px;
+}
+
+#small-pics {
+    margin-left: 20px;
+
+}
+
+.thumbnail {
+    border: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -10px;  
+    box-shadow: none;
+    background-color: none;
+  
+}
+
+
+.container-fluid {
+    border: none;
+    margin-top: 35px;
+
+}
+
+#inputIdNumber {
+
+  width: 300px;
+    
+}
+
+#inputPassword4 {
+
+  width: 300px;
+    
+}
+
+#mdLogin {
+
+    margin-left: 300px;
 }

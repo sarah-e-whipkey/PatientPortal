@@ -13,10 +13,28 @@ namespace PatientPortal {
                 controller: PatientPortal.Controllers.HomeController,
                 controllerAs: 'controller'
             })
-            .state('about', {
-                url: '/about',
-                templateUrl: '/ngApp/about.html',
-                controller: PatientPortal.Controllers.AboutController,
+            .state('mdLogin', {
+                url: '/mdLogin',
+                templateUrl: '/ngApp/mdLogin.html',
+                controller: PatientPortal.Controllers.MDLoginController,
+                controllerAs: 'controller'
+            })
+            .state('dashboard', {
+                url: '/dashboard/:id',
+                templateUrl: '/ngApp/dashboard.html',
+                controller: PatientPortal.Controllers.DashController,
+                controllerAs: 'controller'
+            })
+            .state('patientRegistration', {
+                url: '/patientRegistration',
+                templateUrl: '/ngApp/patientRegistrationForm.html',
+                controller: PatientPortal.Controllers.PatientRegistrationController,
+                controllerAs: 'controller'
+            })
+            .state('medRecords', {
+                url: '/medRecords',
+                templateUrl: '/ngApp/medRecords.html',
+                controller: PatientPortal.Controllers.MedRecordsController,
                 controllerAs: 'controller'
             })
             .state('notFound', {
