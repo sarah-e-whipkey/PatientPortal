@@ -7,5 +7,6 @@ namespace PatientPortal.Models
 {
     public class Messages
     {
+
     }
 }

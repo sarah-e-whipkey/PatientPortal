@@ -1,3 +1,5 @@
+
+/* Login page*/
 #main-white-div {
     margin-top: -20px;
     margin-bottom: -20px;
@@ -21,6 +23,7 @@
  margin-right: 175px;
 }
 
+/*Main login page company title*/
 .company-name {
 
     font-family: 'Quicksand', sans-serif;
@@ -35,19 +38,23 @@
     margin-bottom: 55px;
 }
 
+/*Doc login page*/
 #doc-logo {
 
     padding-left: 175px;
 }
 
+/*Background for every view*/
 .mainBody {
 
-    background-image: url(../images/spotbkg.jpg);
+    background-image: url(../images/icyPoly.jpg);
 
     /*background: repeating-radial-gradient(#eafafa, #84e1e1);*/
 
 }
 
+
+/*MD login link on main page & homelink on MD login*/
 #bottomLink {
 
     background: none;
@@ -56,6 +63,8 @@
     box-shadow: none;
 }
 
+
+/*Main white div on main login*/
 .col-md-12 {
 
     background-color: white;
@@ -64,6 +73,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*Text above thumnails on main login*/
 .above-pics {
     font-family: 'Quicksand', sans-serif;
     background-color: #eafafa;
@@ -77,6 +87,8 @@
 
 }
 
+
+/*Main page login thumbnails*/
 .thumbnail {
     border: none;
     text-align: center;
@@ -87,26 +99,57 @@
   
 }
 
-
+/*Main container on views*/
 .container-fluid {
     border: none;
     margin-top: 35px;
 
 }
 
+/*Input boxes for MD login page*/
 #inputIdNumber {
 
   width: 300px;
     
 }
 
+/*Input boxes for MD login page*/
 #inputPassword4 {
 
   width: 300px;
     
 }
 
+/*MD login form*/
 #mdLogin {
 
     margin-left: 300px;
+}
+
+/*Logo on dashboard*/
+.dash-doc {
+    padding-left: 55px;
+    padding-bottom: 135px;
+
+}
+
+/*Pt registration form 1st fieldset*/
+.pt-details {
+
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+/*Dashboard greeting*/
+#dash-greeting {
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 55px;
+
+}
+
+/*Dashboard accordion*/
+
+.db-acc {
+    font-family: 'Quicksand', sans-serif;
+
 }

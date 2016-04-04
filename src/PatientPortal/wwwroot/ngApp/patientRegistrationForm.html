@@ -1,52 +1,100 @@
-﻿<div>
-    <form>
-        
-        <fieldset>
-            <legend>Patient Details</legend>
-                <label>First Name:</label>
-                <input type="text" />
-                <label>Last Name:</label>
-                <input type="text" /> <br /><br />
-                <label>Date of Birth:</label>
-                <input type="datetime" />
-                <label>Gender:</label>
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female <br /> <br />  
-                <label>Social Security Number:</label>   
-                <input type="text" /> <br /><br />
-                <label>Race:</label>  <br /> 
-                <input type="checkbox" name="race" value="americanIndianOrAlaskaNative" /> American Indian or Alaskan Native <br />
-                <input type="checkbox" name="race" value="asian" /> Asian <br />
-                <input type="checkbox" name="race" value="blackOrAfricanAmerican" /> Black or African American <br />
-                <input type="checkbox" name="race" value="nativeHawaiianOrOtherPacificIslander" /> Native Hawaiian or Other Pacific Islander <br />
-                <input type="checkbox" name="race" value="white" /> White <br /><br />
-                <label>Ethnicity:</label><br />
-                <input type="radio" name="ethnicity" value="hispanicOrLatino" /> Hispanic or Latino <br />
-                <input type="radio" name="ethnicity" value="notHispanicOrLatino" /> Not Hispanic or Latino
-        </fieldset>
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="pure-form pure-form-align">
 
-        <fieldset>
-            <legend>Patient Address Details</legend>
-            <label>Street 1:</label>
-            <input type="text" />
-            <label>Street 2:</label>
-            <input type="text" /><br /><br />
-            <label>City:</label>
-            <input type="text" />
-            <label>State:</label>
-            <input type="text" />
-            <label>Zip:</label>
-            <input type="text" />
+                <div class="pt-details">
+                    <fieldset>
+                        <legend>Patient Details</legend>
+                        <label>First Name:</label>
+                        <input type="text" ng-model="" /><br /><br />
+                        <label>Last Name:</label>
+                        <input type="text" ng-model="" /> <br /><br />
+                        <label>Date of Birth:</label>
+                        <input type="datetime" ng-model="" /><br /><br />
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" value="male" ng-model=""> Male
+                        <input type="radio" name="gender" value="female" ng-model=""> Female <br /> <br />
+                        <label>Social Security Number:</label>
+                        <input type="text" ng-model="" /> <br /><br />
+                        <label>Race:</label>  <br />
+                        <input type="checkbox" name="race" value="americanIndianOrAlaskaNative" ng-model="" /> American Indian or Alaskan Native <br />
+                        <input type="checkbox" name="race" value="asian" ng-model="" /> Asian <br />
+                        <input type="checkbox" name="race" value="blackOrAfricanAmerican" ng-model="" /> Black or African American <br />
+                        <input type="checkbox" name="race" value="nativeHawaiianOrOtherPacificIslander" ng-model="" /> Native Hawaiian or Other Pacific Islander <br />
+                        <input type="checkbox" name="race" value="white" ng-model="" /> White <br /><br />
+                        <label>Ethnicity:</label><br />
+                        <input type="radio" name="ethnicity" value="hispanicOrLatino" ng-model=""/> Hispanic or Latino <br />
+                        <input type="radio" name="ethnicity" value="notHispanicOrLatino" ng-model=""/> Not Hispanic or Latino
+                    </fieldset>
+                </div>
 
-        </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Patient Contact Details</legend>
+                        <label>Street 1:</label>
+                        <input type="text" ng-model=""/>
+                        <label>Street 2:</label>
+                        <input type="text" ng-model="" /><br /><br />
+                        <label>City:</label>
+                        <input type="text" ng-model=""/>
+                        <label>State:</label>
+                        <input type="text" ng-model="" />
+                        <label>Zip:</label>
+                        <input type="text" ng-model=""/>
+                        <label>Phone:</label>
+                        <input type="tel" name="patienttel" ng-model="" /><br />
+                        <label>Email:</label>
+                        <input type="email" ng-model=""/>
 
-        <fieldset>
-            <legend>Patient Contact Details</legend>
-            <label>Phone:</label>
-            <input type="tel" name="patienttel" /><br />
-            <label>Email:</label>
-            <input type="email" />
-        </fieldset>
+                    </fieldset>
+                </div>            
+                <div>
+                    <fieldset>
+                        <legend>Vital Signs</legend>
+                        <label>Height:</label>
+                        <input type="text" ng-model="" /><br />
+                        <label>Weight:</label>
+                        <input type="text" ng-model=""/><br />
+                        <label>BMI:</label>
+                        <input type="text" ng-model=""/><br />
+                    </fieldset><br />
 
-    </form>
+                    <fieldset>
+                        <legend>Conditions</legend>
+                        <label>Problem:</label>
+                        <select name="conditions" ng-model="">
+                            <option value="alzheimers">Alzheimer's Disease</option>
+                            <option value="asthma">Asthma</option>
+                            <option value="copd">Chronic Obstructive Pulmonary Disease</option>
+                            <option value="chf">Congestive Heart Failure</option>
+                            <option value="dm">Diabetes Mellitus Type II</option>
+                            <option value="pregnant">Pregnant</option>
+                            <option value="obesity">Obesity</option>
+                        </select>
+                      </fieldset><br />
+
+                    <fieldset>
+                        <legend>Allergies</legend>
+                        <label>Check all that apply:</label><br />
+                        <input type="checkbox" value="abt" />Antibiotic drugs <br />
+                        <input type="checkbox" value="nsaids" />NSAIDs <br />
+                        <input type="checkbox" value="chemo" />Chemotherapy drugs <br />
+                        <input type="checkbox" value="hiv" />HIV drugs <br />
+                        <input type="checkbox" value="ivpain" />IV Painkillers <br />
+                        <input type="checkbox" value="insulin" />Insulin <br />
+                        <input type="checkbox" value="nkda" />NKDA <br />                  
+                    </fieldset><br />
+
+                    <fieldset>
+                        <legend>Medications</legend>                        
+                        <label for="meds">Please list all medications:</label>
+                        <textarea class="form-control" rows="5" id="meds" ng-model=""></textarea>
+                    </fieldset>
+                </div>
+                <div><input type="submit" value="Register"></div>
+            </form>
+
+        </div>
+    </div>
 </div>

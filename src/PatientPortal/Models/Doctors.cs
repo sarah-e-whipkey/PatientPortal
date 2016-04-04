@@ -7,38 +7,24 @@ namespace PatientPortal.Models
 {
     public class Doctors
     {
-
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Specialty { get; set; }
-        public int IdNumber { get; set; }
-        public int Password { get; set; }
 
+        //public Doctors Login(int Id, int Pw)
+        //{
 
-        public Doctors()
-        {
-            MDs = new List<Doctors>();
-            MDs.Add(new Doctors { FirstName = "Henry", LastName = "Thomas", Specialty = "Primary Care Physician", IdNumber = 2100, Password = 0012 });
-            MDs.Add(new Doctors { FirstName = "Jenny", LastName = "Lee", Specialty = "Cardiologist", IdNumber = 3343, Password = 3433 });
-            MDs.Add(new Doctors { FirstName = "Jane", LastName = "Doe", Specialty = "ENT", IdNumber = 1245, Password = 5421 });
+        //    foreach (var doc in MDs)
+        //    {
+        //        if (Id == doc.Id && Pw == doc.Password)
+        //        {
 
-        }
+        //            return doc;
+        //        }
 
-        public List<Doctors> MDs { get; set; }
-
-        public Doctors Login(int Id, int Pw)
-        {
-
-            foreach (var doc in MDs)
-            {
-                if (Id == doc.IdNumber && Pw == doc.Password)
-                {
-
-                    return doc;
-                }
-
-            }
-            return null;
-        }
+        //    }
+        //    return null;
+        //}
     }
 }

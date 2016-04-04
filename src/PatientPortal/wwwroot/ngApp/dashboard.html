@@ -1,1 +1,53 @@
-﻿<div>Dashboard</div>
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dash-doc"><img alt="doc pic" src="../images/doctor.png" height="130" width="110" />
+
+                    <div class="page-header">
+                        <h5 class="company-name">
+                            Your Health Now <small>Premier Houston Medical Group</small>
+                        </h5>
+                    </div>                    
+                    </div>
+                    <div class="db-acc">
+                        <script type="text/ng-template" id="group-template.html">
+                            <div class="panel {{panelClass || 'panel-default'}}">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" style="color:#fa39c3">
+                                        <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+                                            <span ng-class="{'text-muted': isDisabled}">{{heading}}</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse" uib-collapse="!isOpen">
+                                    <div class="panel-body" style="text-align: right" ng-transclude></div>
+                                </div>
+                            </div>
+                        </script>
+                        <uib-accordion close-others="controller.oneAtATime">
+                            <uib-accordion-group heading="Dashboard" is-open="controller.status.isFirstOpen" is-disabled="controller.status.isFirstDisabled">
+                                Dashboard Home
+                            </uib-accordion-group>
+                            <uib-accordion-group heading="{{group.title}}" ng-repeat="group in controller.groups">
+                                {{group.content}}<br>
+                                {{group.content2}}
+                            </uib-accordion-group>
+                        </uib-accordion>
+                    </div>
+                </div>
+                <div class="col-md-8" id="dash-greeting">
+                    <h2>
+                        Greetings
+                    </h2>
+                    <p>
+                        Personalized message for user
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

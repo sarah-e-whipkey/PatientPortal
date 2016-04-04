@@ -10,11 +10,43 @@ namespace PatientPortal.Controllers {
 
     export class DashController {
         public message = 'Hello from the about page!';
-    }
 
+        //constructor(private acc: ng.ui.bootstrap.IAccordionConfig) {
+        //    acc.closeOthers = true;
+        //}
+
+        oneAtATime = false;
+
+        groups = [
+            {
+                title: 'My Account',
+                content: 'Change Password',
+                content2: 'Personal Information'
+            },
+            {
+                title: 'Medical Records',
+                content: 'Personal Health Record'
+            },
+            {
+                title: 'Messages',
+                content: 'Inbox',
+                content2: 'New Message'
+            },
+            {
+                title: 'Appointments',
+                content: 'Request New Appointment',
+                content2: 'Upcoming Appointments'
+            }
+        ];
+
+
+        status = {
+            isFirstOpen: true,
+            isFirstDisabled: false
+        };        
+        
+    }
     export class PatientRegistrationController {
 
     }
-
-    export class MedRecordsController { }
 }
