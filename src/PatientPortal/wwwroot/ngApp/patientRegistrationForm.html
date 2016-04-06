@@ -1,100 +1,138 @@
 ﻿<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <form class="pure-form pure-form-align">
+            <form class="form-horizontal" role="form" id="pt-registration">
 
-                <div class="pt-details">
-                    <fieldset>
-                        <legend>Patient Details</legend>
-                        <label>First Name:</label>
-                        <input type="text" ng-model="" /><br /><br />
-                        <label>Last Name:</label>
-                        <input type="text" ng-model="" /> <br /><br />
-                        <label>Date of Birth:</label>
-                        <input type="datetime" ng-model="" /><br /><br />
-                        <label>Gender:</label>
-                        <input type="radio" name="gender" value="male" ng-model=""> Male
-                        <input type="radio" name="gender" value="female" ng-model=""> Female <br /> <br />
-                        <label>Social Security Number:</label>
-                        <input type="text" ng-model="" /> <br /><br />
-                        <label>Race:</label>  <br />
-                        <input type="checkbox" name="race" value="americanIndianOrAlaskaNative" ng-model="" /> American Indian or Alaskan Native <br />
-                        <input type="checkbox" name="race" value="asian" ng-model="" /> Asian <br />
-                        <input type="checkbox" name="race" value="blackOrAfricanAmerican" ng-model="" /> Black or African American <br />
-                        <input type="checkbox" name="race" value="nativeHawaiianOrOtherPacificIslander" ng-model="" /> Native Hawaiian or Other Pacific Islander <br />
-                        <input type="checkbox" name="race" value="white" ng-model="" /> White <br /><br />
-                        <label>Ethnicity:</label><br />
-                        <input type="radio" name="ethnicity" value="hispanicOrLatino" ng-model=""/> Hispanic or Latino <br />
-                        <input type="radio" name="ethnicity" value="notHispanicOrLatino" ng-model=""/> Not Hispanic or Latino
-                    </fieldset>
+
+                <div>                    
+                        <h3>Patient Details</h3><br /><br />
+                    <hr />
+                    <div class="form-group">
+                        <label class="col-sm-2" for="firstName">First Name:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="firstName" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="lastName">Last Name:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="lastName" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="dob">Date of Birth:</label>
+                        <div class="col-sm-4"><input type="datetime" class="form-control" id="dob" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="gen">Gender:</label>
+                        <div class="col-sm-4"><input type="radio" name="gender" value="male" ng-model=""> Male
+                        <input type="radio" name="gender" value="female" ng-model=""> Female</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="ssn">Social Security Number:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="ssn" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="race">Race:</label>  <br />
+                        <div class="col-sm-4">
+                            <input type="checkbox" name="race" value="americanIndianOrAlaskaNative" ng-model="" /> American Indian or Alaskan Native<br />
+                            <input type="checkbox" name="race" value="asian" ng-model="" /> Asian<br />
+                            <input type="checkbox" name="race" value="blackOrAfricanAmerican" ng-model="" /> Black or African American<br />
+                            <input type="checkbox" name="race" value="nativeHawaiianOrOtherPacificIslander" ng-model="" /> Native Hawaiian or Other Pacific Islander<br />
+                            <input type="checkbox" name="race" value="white" ng-model="" /> White
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="ethnicity">Ethnicity:</label>
+                        <div class="col-sm-4">
+                            <input type="radio" name="ethnicity" value="hispanicOrLatino" ng-model="" /> Hispanic or Latino
+                            <input type="radio" name="ethnicity" value="notHispanicOrLatino" ng-model="" /> Not Hispanic or Latino
+                        </div>
+                    </div>                 
                 </div>
 
-                <div>
-                    <fieldset>
-                        <legend>Patient Contact Details</legend>
-                        <label>Street 1:</label>
-                        <input type="text" ng-model=""/>
-                        <label>Street 2:</label>
-                        <input type="text" ng-model="" /><br /><br />
-                        <label>City:</label>
-                        <input type="text" ng-model=""/>
-                        <label>State:</label>
-                        <input type="text" ng-model="" />
-                        <label>Zip:</label>
-                        <input type="text" ng-model=""/>
-                        <label>Phone:</label>
-                        <input type="tel" name="patienttel" ng-model="" /><br />
-                        <label>Email:</label>
-                        <input type="email" ng-model=""/>
+                <div>                    
+                       <h3>Patient Contact Details</h3><br /><br />
+                    <hr />
+                    <div class="form-group">
+                        <label class="col-sm-2" for="street">Street 1:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="street" ng-model="" /></div>                    
+                        <label class="col-sm-2" for="street2">Street 2:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" id="street2" ng-model="" /></div>
+                    </div>
 
-                    </fieldset>
+                    <div class="form-group">
+                        <label class="col-sm-2">City:</label>
+                        <div class="col-sm-2"><input type="text" class="form-control" ng-model="" /></div>
+                        <label class="col-sm-2">State:</label>
+                        <div class="col-sm-2"><input type="text" class="form-control" ng-model="" /></div>
+                        <label class="col-sm-2">Zip:</label>
+                        <div class="col-sm-2"><input type="text" class="form-control" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2">Phone:</label>
+                        <div class="col-sm-4"><input type="tel" class="form-control" name="patienttel" ng-model="" /></div>
+                        <label class="col-sm-2">Email:</label>
+                        <div class="col-sm-4"><input type="email" class="form-control" ng-model="" /></div>
+                    </div>               
                 </div>            
+
                 <div>
-                    <fieldset>
-                        <legend>Vital Signs</legend>
-                        <label>Height:</label>
-                        <input type="text" ng-model="" /><br />
-                        <label>Weight:</label>
-                        <input type="text" ng-model=""/><br />
-                        <label>BMI:</label>
-                        <input type="text" ng-model=""/><br />
-                    </fieldset><br />
+                        <h3>Patient Medical Details</h3>
+                    <hr />
+                    <div class="form-group">
+                        <label class="col-sm-2">Height:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2">Weight:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2">BMI:</label>
+                        <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+                    </div>
+                    
 
-                    <fieldset>
-                        <legend>Conditions</legend>
-                        <label>Problem:</label>
-                        <select name="conditions" ng-model="">
-                            <option value="alzheimers">Alzheimer's Disease</option>
-                            <option value="asthma">Asthma</option>
-                            <option value="copd">Chronic Obstructive Pulmonary Disease</option>
-                            <option value="chf">Congestive Heart Failure</option>
-                            <option value="dm">Diabetes Mellitus Type II</option>
-                            <option value="pregnant">Pregnant</option>
-                            <option value="obesity">Obesity</option>
-                        </select>
-                      </fieldset><br />
+                    
+                        <h4>Conditions</h4>
+                    <div class="form-group">
+                        <label class="col-sm-2">Problem:</label>
+                        <div class="col-sm-4">
+                            <select name="conditions" class="form-control" ng-model="">
+                                <option value="alzheimers">Alzheimer's Disease</option>
+                                <option value="asthma">Asthma</option>
+                                <option value="copd">Chronic Obstructive Pulmonary Disease</option>
+                                <option value="chf">Congestive Heart Failure</option>
+                                <option value="dm">Diabetes Mellitus Type II</option>
+                                <option value="pregnant">Pregnant</option>
+                                <option value="obesity">Obesity</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                        <h4>Allergies</h4>
+                    <div class="form-group">
+                        <label class="col-sm-2">Check all that apply:</label><br />
+                        <div class="col-sm-4">
+                            <input type="checkbox" value="abt" /> Antibiotic drugs <br />
+                            <input type="checkbox" value="nsaids" /> NSAIDs <br />
+                            <input type="checkbox" value="chemo" /> Chemotherapy drugs <br />
+                            <input type="checkbox" value="hiv" /> HIV drugs <br />
+                            <input type="checkbox" value="ivpain" /> IV Painkillers <br />
+                            <input type="checkbox" value="insulin" /> Insulin <br />
+                            <input type="checkbox" value="nkda" /> NKDA <br />
+                        </div>
+                    </div>               
+                    
 
-                    <fieldset>
-                        <legend>Allergies</legend>
-                        <label>Check all that apply:</label><br />
-                        <input type="checkbox" value="abt" />Antibiotic drugs <br />
-                        <input type="checkbox" value="nsaids" />NSAIDs <br />
-                        <input type="checkbox" value="chemo" />Chemotherapy drugs <br />
-                        <input type="checkbox" value="hiv" />HIV drugs <br />
-                        <input type="checkbox" value="ivpain" />IV Painkillers <br />
-                        <input type="checkbox" value="insulin" />Insulin <br />
-                        <input type="checkbox" value="nkda" />NKDA <br />                  
-                    </fieldset><br />
-
-                    <fieldset>
-                        <legend>Medications</legend>                        
-                        <label for="meds">Please list all medications:</label>
-                        <textarea class="form-control" rows="5" id="meds" ng-model=""></textarea>
-                    </fieldset>
+                        <h4>Medications</h4>                        
+                    <div class="form-group">
+                        <label for="meds" class="col-sm-2">Please list all medications:</label>
+                        <div class="col-sm-4"><textarea class="form-control" rows="5" id="meds" ng-model=""></textarea></div>
+                    </div>
+                    
                 </div>
-                <div><input type="submit" value="Register"></div>
+                <div><input class="btn-register" type="submit" value="Register"></div>
             </form>
 
         </div>
     </div>
 </div>
+

@@ -30,7 +30,10 @@
                             <uib-accordion-group heading="Dashboard" is-open="controller.status.isFirstOpen" is-disabled="controller.status.isFirstDisabled">
                                 Dashboard Home
                             </uib-accordion-group>
-                            <uib-accordion-group heading="{{group.title}}" ng-repeat="group in controller.groups">
+                            <uib-accordion-group heading="Tester"  templateUrl="/ngApp/templates/accordiontemplate.html">
+                                <a ui-href="/mdLogin">Testington</a>
+                            </uib-accordion-group>
+                            <uib-accordion-group heading="{{group.title}}" ng-repeat="group in controller.groups">                                
                                 {{group.content}}<br>
                                 {{group.content2}}
                             </uib-accordion-group>

@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace PatientPortal.Models
 {
-    public class UserAccount: PatientAccount
+    public class User
     {
-       
     }
 }

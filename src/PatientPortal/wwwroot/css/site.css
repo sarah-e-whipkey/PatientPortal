@@ -133,12 +133,29 @@
 
 }
 
-/*Pt registration form 1st fieldset*/
-.pt-details {
-
+/*Pt registration form */
+#pt-registration {
     font-family: 'Quicksand', sans-serif;
 
 }
+
+#pt-registration h3 {
+    text-align: center;
+}
+
+#pt-registration h4 {
+    font-style: italic;
+}
+
+.btn-register {
+    background-color: #ff5050;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 15px 25px;
+
+}
+
+
 
 /*Dashboard greeting*/
 #dash-greeting {
@@ -153,3 +170,4 @@
     font-family: 'Quicksand', sans-serif;
 
 }
+
